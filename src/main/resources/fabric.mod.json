@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "elyfire",
+  "version": "${version}",
+  "name": "elyfire",
+  "description": "Visual Fire Aspect for Minecraft Fabric 1.21.11 with Sodium & Reese's Sodium Options integration.",
+  "authors": [
+    "Antigravity",
+    "milangelvi"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/elyfire/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.elyfire.ElyFireMod"
+    ],
+    "client": [
+      "com.elyfire.client.ElyFireClient"
+    ],
+    "sodium:config_api_user": [
+      "com.elyfire.client.sodium.ElyFireSodiumConfig"
+    ]
+  },
+  "mixins": [
+    "elyfire.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
